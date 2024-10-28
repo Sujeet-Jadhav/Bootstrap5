@@ -1,0 +1,18 @@
+.card-notify-tag {
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  color: whitesmoke;
+  background-color: blue;
+}
+
+.triangle-down {
+  position: absolute;
+  right: 0px;
+  bottom: -16px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 20px solid blue;
+}

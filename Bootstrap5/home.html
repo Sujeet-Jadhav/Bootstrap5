@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Home Page</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-image: linear-gradient(to right top, #1dcb43, #00d575, #00dea0, #00e5c4, #12ebe1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar border-bottom border-body navbar-expand-xl bg-body-tertiary py-3" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand mx-3" href="#">WOVEN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <form class="d-flex" role="search">
+            <div class="input-group m-2  px-auto" style="width: 320px;">
+              <select class="form-select border border-2 border-light" id="inputGroupSelect01">
+                <option selected disabled>Location</option>
+                <option value="1">Pune</option>
+                <option value="2">Mumbai</option>
+                <option value="3">Nagpur</option>
+              </select>
+            </div>
+          </form>
+          <form class="d-flex me-auto" role="search">
+            <div class="input-group px-auto m-2 " style="width: 500px;">
+              <input type="text" class="form-control border border-2 border-light" placeholder="Search"
+                aria-label="Search " aria-describedby="button-addon2">
+              <button class="btn btn-dark border border-success border-3" type="button"><i class="bi bi-search"
+                  style="color: aliceblue;"></i></button>
+            </div>
+          </form>
+          </form>
+          <form class="d-flex justify-content-end" role="search">
+            <a class="nav-link" href="#"><button
+                class="btn btn-md btn-success rounded-pill border border-success border-3 m-2" type="submit"
+                style="width: 100px;">Login</button></a>
+            <button class="btn btn-md btn-success rounded-pill border border-success border-3 m-2" type="submit"
+              style="width: 100px;"> <i class="bi bi-cart3 me-2"> </i>Cart</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="alert alert-primary d-flex alert-dismissible fade show text-center" role="alert">
+    <strong>Holy There! </strong> <span>Woven is now offering a good Happy Holy Sale.</span>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col col-md-7 col sm-12">
+        <div class="container-fluid d-flex row">
+          <h1 class="fw-bold my-3"
+            style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+            Become a seller on
+            WOVEN</h1>
+        </div>
+        <div class="container-fluid d-flex row">
+          <h5 class="my-3">Sell on Woven and get a chance to get rewards worth ₹8000 within first 15 days.
+          </h5>
+        </div>
+        <div class="container-fluid my-3">
+          <button type="button" class="btn btn-warning rounded-pill m-2 px-3">Start Selling</button>
+          <button type="button" class="btn btn-dark rounded-pill m-2 px-3">Download beginner's guide</button>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4 col-md-5 col-sm-12">
+        <img class="img-fluid"
+          src="https://m.media-amazon.com/images/G/01/sp-marketing-toolkit/guides/design/photography/studio/Retail_Box-triple_angle-v3-sm.png"
+          alt="A stack of various Amazon boxes" title="">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container shadow p-4 mb-5 bg-body-tertiary rounded"
+    style="background-color: whitesmoke; border-top:5px solid rgba(243, 163, 15, 0.938) ;">
+    <div class="row">
+      <div class="col col-12">
+        <h1 class="text-center fw-bold" style="font-family: 'Trebuchet MS'">What you require to start selling</h1>
+        <div class="row my-4">
+          <div class="col col-md-4 text-center">
+            <i class="bi bi-receipt-cutoff" style="color: #0eb482; font-size: 60px;"></i>
+            <h5>GST Number on your business</h5>
+          </div>
+          <div class="col col-md-4 text-center">
+            <i class="bi bi-bank" style="color: #0eb482; font-size: 60px;"></i>
+            <h5>Add your Bank Account </h5>
+          </div>
+          <div class="col col-md-4 text-center">
+            <i class="bi bi-card-checklist" style="color: #0eb482; font-size: 60px;"></i>
+            <h5>Product Intro and Images to create listing</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid 
+  text-dark text-center">
+    <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="true">
+      <div class="carousel-inner">
+        <div class="carousel-item bg-dark active pb-4" data-bs-interval="5000">
+          <h2 class="m-3 text-warning">
+            Cosmostics
+          </h2>
+          <img
+            src="https://media.istockphoto.com/id/1136422297/photo/face-cream-serum-lotion-moisturizer-and-sea-salt-among-bamboo-leaves.jpg?s=2048x2048&w=is&k=20&c=z6udAz2awGU8VK_5LKKuM6e6lKOniWiX3dMSB8gdRB0="
+            width="35%" alt="LOGO">
+        </div>
+        <div class="carousel-item bg-dark pb-4" data-bs-interval="5000">
+          <h2 class="m-3 text-warning text-center">
+            Unique Items
+          </h2>
+          <div class="text-center">
+            <img
+              src="https://media.istockphoto.com/id/525560143/photo/set-service.jpg?s=2048x2048&w=is&k=20&c=VZzOwdozXZnmbUEDZivVeC-6Q5tsL4w_p2psZwT9WK8="
+              width="35%" alt="LOGO">
+          </div>
+        </div>
+        <div class="carousel-item bg-dark pb-4" data-bs-interval="5000">
+          <h2 class="m-3 text-warning">
+            And Many More
+          </h2>
+          <div class="text-center">
+            <img
+              src="https://media.istockphoto.com/id/1288104320/photo/shopping-cart-full-of-food-products-over-supermarket-aisle-background.jpg?s=2048x2048&w=is&k=20&c=vFmKjXf6PR1f_dVMM_0ek26nggE00MWZBxhckv8nf9Y="
+              width="35%" alt="LOGO">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">
+          Previous
+        </span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">
+          Next
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 class="text-center m-4 fw-bold" style="font-family: 'Trebuchet MS'">Categories</h1>
+    <hr>
+    <div class="row">
+      <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+        <img src="./images/offer-image.png" class="rounded-circle rounded-lg img-fluid" alt="offer_img">
+        <h5 class="text-center text-sm text-md-lg text-lg m-2 text-break">Offers</h5>
+      </div>
+      <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+        <img src="./images/offer-image.png" class="rounded-circle rounded-lg img-fluid" alt="offer_img">
+        <h5 class="text-center text-sm text-md-lg text-lg m-2 text-break">Offers</h5>
+      </div>
+      <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+        <img src="./images/offer-image.png" class="rounded-circle rounded-lg img-fluid" alt="offer_img">
+        <h5 class="text-center text-sm text-md-lg text-lg m-2 text-break">Offers</h5>
+      </div>
+      <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+        <img src="./images/offer-image.png" class="rounded-circle rounded-lg img-fluid" alt="offer_img">
+        <h5 class="text-center text-sm text-md-lg text-lg m-2 text-break">Offers</h5>
+      </div>
+      <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+        <img src="./images/offer-image.png" class="rounded-circle rounded-lg img-fluid" alt="offer_img">
+        <h5 class="text-center text-sm text-md-lg text-lg m-2 text-break">Offers</h5>
+      </div>
+      <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+        <img src="./images/offer-image.png" class="rounded-circle rounded-lg img-fluid" alt="offer_img">
+        <h5 class="text-center text-sm text-md-lg text-lg m-2 text-break">Offers</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-success my-3">
+    <div class="row text-center">
+      <div class="col-12 col-sm-6 col-md-4 my-3">
+        <img src="https://bighaat-prodv2-media-cdn.azureedge.net/wsfbanners/BIGHAAT-couppon_02.webp" class="img-fluid"
+          alt="...">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 my-3">
+        <img src="https://bighaat-prodv2-media-cdn.azureedge.net/wsfbanners/BIGHAAT-couppon_02.webp" class="img-fluid"
+          alt="...">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 my-3">
+        <img src="https://bighaat-prodv2-media-cdn.azureedge.net/wsfbanners/BIGHAAT-couppon_02.webp" class="img-fluid"
+          alt="...">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="container my-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-sm-12 col-md-4 p-2">
+          <input type="text" class="form-control border border-2 border-light" placeholder="Search" aria-label="Search "
+            aria-describedby="button-addon2">
+        </div>
+        <div class="col-12 col-sm-12 col-md-2 p-2">
+          <select class="form-select border border-2 border-light" id="inputGroupSelect">
+            <option selected disabled>Price Low To High</option>
+            <option value="1">Under 1000</option>
+            <option value="2">1000 to 2000</option>
+            <option value="3">2000 to 5000</option>
+            <option value="3">Above 5000 </option>
+          </select>
+        </div>
+        <div class="col-12 col-sm-12 col-md-2 p-2">
+          <select class="form-select border border-2 border-light" id="inputGroupSelect">
+            <option selected disabled>Select Category</option>
+            <option value="3">Stationery</option>
+            <option value="3">Home And Kitchen </option>
+            <option value="2">Electronics And Accessories</option>
+            <option value="2">Others</option>
+          </select>
+        </div>
+        <div class="col-12 col-sm-12 col-md-2 p-2">
+          <button class="btn btn-success btn-md rounded-pill" type="submit" style="width: 100px;"> Search </button>
+        </div>
+      </div>
+      <div class=" border border-black border-1 my-3"></div>
+      <div class="row g-2">
+        <div class="col-6 m-2">
+          Fresh recommendations
+        </div>
+      </div>
+
+      <div class="row g-3">
+
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div style="height: 45%;">
+              <img
+                src="https://media.istockphoto.com/id/1136422297/photo/face-cream-serum-lotion-moisturizer-and-sea-salt-among-bamboo-leaves.jpg?s=2048x2048&w=is&k=20&c=z6udAz2awGU8VK_5LKKuM6e6lKOniWiX3dMSB8gdRB0="
+                class="card-img-top" alt="...">
+            </div>
+            <div class="card-notify-tag p-2">20% Off<div class="triangle-down"></div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <p class="card-title">Title | Rs.200 | New</p>
+              <a href="#" class="btn btn-sm btn-warning text-break">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div style="height: 45%;">
+              <img
+                src="https://media.istockphoto.com/id/1136422297/photo/face-cream-serum-lotion-moisturizer-and-sea-salt-among-bamboo-leaves.jpg?s=2048x2048&w=is&k=20&c=z6udAz2awGU8VK_5LKKuM6e6lKOniWiX3dMSB8gdRB0="
+                class="card-img-top" alt="...">
+            </div>
+            <div class="card-notify-tag p-2">20% Off<div class="triangle-down"></div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <p class="card-title">Title | Rs.200 | New</p>
+              <a href="#" class="btn btn-sm btn-warning text-break">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div style="height: 45%;">
+              <img
+                src="https://media.istockphoto.com/id/1136422297/photo/face-cream-serum-lotion-moisturizer-and-sea-salt-among-bamboo-leaves.jpg?s=2048x2048&w=is&k=20&c=z6udAz2awGU8VK_5LKKuM6e6lKOniWiX3dMSB8gdRB0="
+                class="card-img-top" alt="...">
+            </div>
+            <div class="card-notify-tag p-2">20% Off<div class="triangle-down"></div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <p class="card-title">Title | Rs.200 | New</p>
+              <a href="#" class="btn btn-sm btn-warning text-break">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div style="height: 45%;">
+              <img
+                src="https://media.istockphoto.com/id/1136422297/photo/face-cream-serum-lotion-moisturizer-and-sea-salt-among-bamboo-leaves.jpg?s=2048x2048&w=is&k=20&c=z6udAz2awGU8VK_5LKKuM6e6lKOniWiX3dMSB8gdRB0="
+                class="card-img-top" alt="...">
+            </div>
+            <div class="card-notify-tag p-2">20% Off<div class="triangle-down"></div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <p class="card-title">Title | Rs.200 | New</p>
+              <a href="#" class="btn btn-sm btn-warning text-break">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div style="height: 45%;">
+              <img
+                src="https://media.istockphoto.com/id/1136422297/photo/face-cream-serum-lotion-moisturizer-and-sea-salt-among-bamboo-leaves.jpg?s=2048x2048&w=is&k=20&c=z6udAz2awGU8VK_5LKKuM6e6lKOniWiX3dMSB8gdRB0="
+                class="card-img-top" alt="...">
+            </div>
+            <div class="card-notify-tag p-2">20% Off<div class="triangle-down"></div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <p class="card-title">Title | Rs.200 | New</p>
+              <a href="#" class="btn btn-sm btn-warning text-break">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div style="height: 45%;">
+              <img
+                src="https://media.istockphoto.com/id/1136422297/photo/face-cream-serum-lotion-moisturizer-and-sea-salt-among-bamboo-leaves.jpg?s=2048x2048&w=is&k=20&c=z6udAz2awGU8VK_5LKKuM6e6lKOniWiX3dMSB8gdRB0="
+                class="card-img-top" alt="...">
+            </div>
+            <div class="card-notify-tag p-2">20% Off<div class="triangle-down"></div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <p class="card-title">Title | Rs.200 | New</p>
+              <a href="#" class="btn btn-sm btn-warning text-break">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div style="height: 45%;">
+              <img
+                src="https://media.istockphoto.com/id/1136422297/photo/face-cream-serum-lotion-moisturizer-and-sea-salt-among-bamboo-leaves.jpg?s=2048x2048&w=is&k=20&c=z6udAz2awGU8VK_5LKKuM6e6lKOniWiX3dMSB8gdRB0="
+                class="card-img-top" alt="...">
+            </div>
+            <div class="card-notify-tag p-2">20% Off<div class="triangle-down"></div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <p class="card-title">Title | Rs.200 | New</p>
+              <a href="#" class="btn btn-sm btn-warning text-break">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div style="height: 45%;">
+              <img
+                src="https://media.istockphoto.com/id/1136422297/photo/face-cream-serum-lotion-moisturizer-and-sea-salt-among-bamboo-leaves.jpg?s=2048x2048&w=is&k=20&c=z6udAz2awGU8VK_5LKKuM6e6lKOniWiX3dMSB8gdRB0="
+                class="card-img-top" alt="...">
+            </div>
+            <div class="card-notify-tag p-2">20% Off<div class="triangle-down"></div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <p class="card-title">Title | Rs.200 | New</p>
+              <a href="#" class="btn btn-sm btn-warning text-break">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container-fluid bg-dark text-white text-center py-3">
+      <span>All Rights Reserved © 2024</span>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
